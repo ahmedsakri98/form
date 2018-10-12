@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id='container'>
+        <div class='signup'>
+            <h1 class="form-title">Registration form</h1>
+            <form name='register' id="register">
+                <input type='text' placeholder='First Name:' id="fname">
+                <input type='text' placeholder='Last Name:' id="lname">
+                <input type="radio" id="male" checked><span>Male</span>
+                <input type="radio" id="female"><span>Female</span>
+                <input type='text' placeholder='Email Address:' id="email">
+                <input type='text' placeholder='Phone Number:' onkeypress="return isNumber(event)" id="phone" minlength="10"
+                    maxlength="10">
+                <input type="text" placeholder='Address:' id="address">
+                <button name="submit" type="submit">SUBMIT</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
